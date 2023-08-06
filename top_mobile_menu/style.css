@@ -1,0 +1,78 @@
+.menu_burger {
+  overflow-y: scroll;
+  height: 100%;
+  z-index: 100;
+}
+
+.burger-top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.burger-menu-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+summary {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: url(./images/Vector_2.svg);
+}
+
+details[open] summary:after {
+  content: url(./images/Vector_3.svg);
+}
+
+.burger-menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.burger-menu-links a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+.burger-menu-links a::first-letter {
+  text-transform: uppercase;
+}
+
+.no-dropdown:after{
+	display:none;
+}
